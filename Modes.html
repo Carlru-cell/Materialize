@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <title>Minecraft Guide - Game Modes</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+        
+        body {
+            background-color: #000;
+            font-family: 'Minecraft', sans-serif;
+            color: #fff;
+        }
+
+        .game-mode-section {
+            padding: 4rem 2rem;
+            background-color: #212121;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+
+        .game-mode-card {
+            background: #333;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-mode-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+        }
+
+        .game-mode-card .card-title {
+            font-family: 'Minecraft', sans-serif;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+        }
+
+        .card-content {
+            font-size: 1rem;
+            color: #ccc;
+            padding: 1rem;
+        }
+
+        .card-action a {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .card-action a:hover {
+            color: #fff;
+        }
+
+        
+        .tabs .tab a.active {
+            background-color: #4CAF50 !important;
+            color: white !important;
+        }
+
+        
+        .tabs .tab a {
+            color: #ccc !important;
+        }
+
+        
+        .tabs .tab a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        
+        .tab-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo" style="font-family: 'Minecraft', sans-serif; font-size: 2rem;">Minecraft Guide</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="Modes.html">Modes</a></li>
+                    <li><a href="Health.html">Health</a></li>
+                    <li><a href="armories.html">Tools/Armories</a></li>
+                    <li><a href="mobs.html">Hostile Mobs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <ul id="mobile-nav" class="sidenav">
+        <li><a href="Modes.html">Modes</a></li>
+        <li><a href="Health.html">Health</a></li>
+        <li><a href="armories.html">Tools/Armories</a></li>
+        <li><a href="mobs.html">Hostile Mobs</a></li>
+    </ul>
+
+    <section class="game-mode-section container">
+        <h2 class="center-align">Minecraft Game Modes</h2>
+
+        <div class="row">
+            <div class="col s12">
+                <ul id="game-mode-tabs" class="tabs">
+                    <li class="tab col s3"><a href="#survival">Survival</a></li>
+                    <li class="tab col s3"><a href="#creative">Creative</a></li>
+                    <li class="tab col s3"><a href="#adventure">Adventure</a></li>
+                    <li class="tab col s3"><a href="#spectator">Spectator</a></li>
+                </ul>
+            </div>
+
+            <div id="survival" class="col s12">
+                <div class="game-mode-card">
+                    <div class="card-title">Survival Mode</div>
+                    <div class="card-content">
+                        <p>In this mode, players can take damage from the environment and hostile mobs, and will die if they receive enough damage. When a player dies, they will return to the world spawn, a previously slept-in bed, or a respawn anchor in the Nether..</p>
+                        <img src="img/Survival1.webp" alt="Survival Mode">
+                    </div>
+                    <div class="card-content">
+                        <p>Survival mode offers the core Minecraft experience, especially in thriving the world of Minecraft. Always prepare yourself from harms and from the monsters. Surviving is you main objective in this mode.</p>
+                        <img src="img/fighting.webp" alt="Fighting Monsters">
+                    </div>
+                    <div class="card-content">
+                        <p>Gathering resources is an imprtant process of the game. With resources, you can craft tools, weapons, equipments, and other important things.</p>
+                        <img src="img/mining2.webp" alt="Gathering Resources">
+                    </div>
+                    <div class="card-action">
+                        <a href="https://minecraft-archive.fandom.com/wiki/Survival_(Game_Mode)">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="creative" class="col s12">
+                <div class="game-mode-card">
+                    <div class="card-title">Creative Mode</div>
+                    <div class="card-content">
+                        <p>Creative mode allows you to build freely with unlimited resources and the ability to fly. No health or hunger bars, and you can explore the world without limits.</p>
+                        <img src="img/Creativemode1.webp" alt="Creative Mode">
+                    </div>
+                    <div class="card-content">
+                        <p>Creative mode allows the player to choose or equip any items in the game. Opening your Inventory will show you all the items that you can use and equip, you can also get items that you can't get from the inventory through commands.</p>
+                        <img src="img/creativeitems.jpg" alt="Creative Mode Items">
+                    </div>
+                    <div class="card-content">
+                        <p>This mode offers infinite possibilities of creation. It can be from Redstone Engineering to building various infastructures. The choice is yours.</p>
+                        <img src="img/Creativebuild.webp" alt="Creative Mode Builds">
+                    </div>
+                    <div class="card-action">
+                        <a href="https://minecraft.fandom.com/wiki/Creative">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="adventure" class="col s12">
+                <div class="game-mode-card">
+                    <div class="card-title">Adventure Mode</div>
+                    <div class="card-content">
+                        <p>Adventure mode focuses on exploring custom maps and adventures, with certain restrictions like only being able to break specific blocks with the correct tools.</p>
+                        <img src="img/Adventuremode2.png" alt="Adventure Mode Image">
+                    </div>
+                    <div class="card-action">
+                        <a href="https://minecraft.fandom.com/wiki/Adventure">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spectator" class="col s12">
+                <div class="game-mode-card">
+                    <div class="card-title">Spectator Mode</div>
+                    <div class="card-content">
+                        <p>Spectator mode lets you explore the world without interacting with it. You can fly through blocks and observe the environment or other players from any angle.</p>
+                        <img src="img/Spectatormode.avif" alt="Spectator Mode Image">
+                    </div>
+                    <div class="card-content">
+                        <p>You can also see what the other mobs see, and see the world from their perspective (refer to the image below) the image below is an example of the vision of the creeper.</p>
+                        <img src="img/Creepervision.webp" alt="creeper vision Image">
+                    </div>
+                    <div class="card-action">
+                        <a href="https://minecraft.fandom.com/wiki/Spectator">Learn More</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Minecraft Guide 2024 | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.tabs').tabs();
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+</body>
+</html>

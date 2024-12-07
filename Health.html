@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <title>Health Status in Minecraft</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+        body {
+            background-color: black;
+            font-family: 'Minecraft', sans-serif;
+            color: #fff;
+        }
+
+        .background-section {
+            background-image: url(img/healthpng.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 4px solid #4CAF50;
+        }
+
+
+        .content-section {
+            padding: 3rem 2rem;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            background: #212121;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+        }
+
+        .card-image img {
+            width: 100%;
+            height: auto;
+            filter: brightness(70%);
+        }
+
+        .card-content {
+            padding: 1rem;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #212121;
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+        }
+
+        .collapsible-header {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .collapsible-body {
+            background-color: #333;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo" style="font-family: 'Minecraft', sans-serif; font-size: 2rem;">Minecraft Guide</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="Modes.html">Modes</a></li>
+                    <li><a href="Health.html">Health</a></li>
+                    <li><a href="armories.html">Tools/Armories</a></li>
+                    <li><a href="mobs.html">Hostile Mobs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <ul id="mobile-nav" class="sidenav">
+        <li><a href="Modes.html">Modes</a></li>
+        <li><a href="Health.html">Health</a></li>
+        <li><a href="armories.html">Tools/Armories</a></li>
+        <li><a href="mobs.html">Hostile Mobs</a></li>
+    </ul>
+
+    <section class="content-section container">
+        <h2>Player Health</h2>
+        <div class="card">
+            <div class="card-image">
+                <img src="img/Heartpoints.jpg" alt="Player Health">
+            </div>
+            <div class="card-content">
+                <p>The player's health is displayed as a row of hearts, each representing 2 health points. Players start with 10 hearts (20 health points). Health can be reduced by taking damage and can be restored using food, potions, and status effects.</p>
+                <ul>
+                    <li><strong>Full Health:</strong> 10 hearts or 20 health points (green hearts)</li>
+                    <li><strong>Damage:</strong> Health is reduced when taking damage (e.g., from mobs, falls, or environmental hazards).</li>
+                    <li><strong>Regeneration:</strong> Health regenerates when the hunger bar is full and can be accelerated with the Regeneration effect.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Mob Health</h2>
+        <div class="card">
+            <div class="card-image">
+                <img src="img/Minecraftmobs.avif" alt="Mob Health">
+            </div>
+            <div class="card-content">
+                <p>Health in mobs is displayed as hearts, similar to players. Different mobs have different healt amount. Here are examples of some mob health:</p>
+                <ul>
+                    <li><strong>Zombie:</strong> 10 health points (5 hearts)</li>
+                    <li><strong>Skeleton:</strong> 20 health points (10 hearts)</li>
+                    <li><strong>Enderman:</strong> 40 health points (20 hearts)</li>
+                    <li><strong>Creeper:</strong> 20 health points (10 hearts)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Status Effects on Health</h2>
+        <div class="card">
+            <div class="card-image">
+                <img src="img/health.png" alt="Health Effects">
+            </div>
+            <div class="card-content">
+                <p>Several status effects can influence health, such as:</p>
+                <ul>
+                    <li><strong>Poison:</strong> Reduces health over time but never below 1 health point.</li>
+                    <li><strong>Wither:</strong> Reduces health over time and can lower it below 1 health point.</li>
+                    <li><strong>Regeneration:</strong> Restores health over time, useful for healing after battle.</li>
+                    <li><strong>Hunger:</strong> Inflicts damage to the player overtime when the hunger bar is empty.</li>  
+                </ul>
+            </div>
+        </div>
+
+        <h2>Healing and Damage</h2>
+        <div class="card">
+            <div class="card-image">
+                <img src="img/Death screen.avif" alt="Healing and Damage">
+            </div>
+            <div class="card-content">
+                <p>Healing and damage in Minecraft can be influenced by many factors:</p>
+                <ul>
+                    <li><strong>Food:</strong> Eating food restores health (e.g., bread restores 5 health points).</li>
+                    <li><strong>Potions:</strong> Instant Health potions or Splash Potions of Healing restore health.</li>
+                    <li><strong>Environmental Hazards:</strong> Falling damage, lava, drowning, and fire can deal significant damage.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Healing Tips</h2>
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">info</i>Food and Healing</div>
+                <div class="collapsible-body"><span>Eating food restores health, with different foods restoring varying amounts of health points. Beef is the best food source you can take with you</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">info</i>Potions and Healing</div>
+                <div class="collapsible-body"><span>Potions of Healing or Splash Potions can quickly restore health, i recommend using these in a very desperate situation when you are low on health.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">info</i>Status Effects</div>
+                <div class="collapsible-body"><span>Drinking milk will remove any status effects that you receieved or use Regeneration potions effects to heal over time after taking damage.</span></div>
+            </li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <p>&copy; Minecraft Guide 2024 | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+</body>
+</html>
